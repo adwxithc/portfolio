@@ -1,6 +1,7 @@
 import React from 'react'
 import { CanvasRevealEffect } from './ui/CanvasRevealEffect'
 import { AnimatePresence, motion } from "framer-motion";
+import { phases } from '@/data';
 
 function Approach() {
     return (
@@ -10,13 +11,7 @@ function Approach() {
             </h1>
             <div className="my-20 flex flex-col lg:flex-row items-center justify-center  w-full gap-4 mx-auto px-8">
                 {
-                    [
-                        { title: "planning and strategy", phase: "phase 1", desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta assumenda id nihil fuga eveniet aspernatur porro modi hic distinctio culpa eos atque consequuntur suscipit, maiores libero quae, explicabo quasi veniam, voluptatibus blanditiis recusandae, alias in enim voluptatibus. Sequi assumenda nobis aut sit?',colorClass:'bg-emerald-900',colors:[[0, 255, 255]] },
-                        { title: "planning and execution", phase: "phase 2", desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta assumenda id nihil fuga eveniet aspernatur porro modi hic distinctio culpa eos atque consequuntur suscipit, maiores libero quae, explicabo quasi veniam, voluptatibus blanditiis recusandae, alias in enim voluptatibus. Sequi assumenda nobis aut sit?',colorClass:'bg-pink-900',colors: [[221, 255, 247]]},
-                        { title: "planning and commiting", phase: "phase 3", desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta assumenda id nihil fuga eveniet aspernatur porro modi hic distinctio culpa eos atque consequuntur suscipit, maiores libero quae, explicabo quasi veniam, voluptatibus blanditiis recusandae, alias in enim voluptatibus. Sequi assumenda nobis aut sit?', colorClass:'bg-sky-900',colors:[[125, 211, 252]] },
-
-
-                    ].map(({ title, phase, desc, colorClass, colors }) => (
+                    phases.map(({ title, phase, desc, colorClass, colors }) => (
 
                         <Card
                             key={title}
