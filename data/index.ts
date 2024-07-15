@@ -100,7 +100,7 @@ export const navItems = [
       id: 1,
       title: "SpeakEx: Enhance Fluency",
       des: "platform designed to enhance fluency through realtime communication",
-      img: "/images/projects/speakex.png",
+      img: "/images/projects/speakex1.png",
       iconLists: ["/images/tech/tailwind.svg", "/images/tech/ts.svg","/images/tech/react.svg","/images/tech/docker.svg"],
       link: "https://github.com/adwxithc/speak-ex-frontend",
     },
